@@ -1,0 +1,100 @@
+@import './base.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.center{
+    @apply flex flex-row justify-center
+}
+
+.shade1{
+  width: 100vw;
+  height: 1000px;
+  @apply bg-black
+  bg-opacity-60 
+}
+
+
+.heroText{
+@apply flex flex-col justify-center text-3xl lg:text-6xl text-white font-bold text-center lg:text-left 
+}
+
+.circularLogo{
+  width:1250px;
+  height:350px;
+  margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4%;
+  object-fit:cover;
+  border-radius:50%;
+  margin-top: 4%;
+  @apply  mb-7
+}
+
+.img1{
+ width: auto ;
+ height: 700px;
+  background-image: url('../assets/hills.jpg'); 
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.img2{
+  width:150px;
+  height:150px;
+  margin-left: auto;
+    margin-right: auto;
+  object-fit:cover;
+  border-radius:50%;
+  
+}
+
+.scara{
+  animation: scara 2s ease-in-out infinite;
+}
+
+@keyframes scara{
+from{
+  transform: scale(01);
+}
+50%{
+  transform: scale(1.2);
+}
+to{
+  transform: scale(01);
+}
+
+}
+@media (max-width:840px){
+  .img1{
+ width: auto ;
+ height: 750px;
+ background-image: url('../assets/hills.jpg');
+  background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.circularLogo{
+  width:250px;
+  height:250px;
+  margin-left: auto;
+  margin-top: 7%;
+    margin-right: auto;
+    margin-bottom: 4%;
+    border-width:3px;
+    border-color: #FFFFFF;
+    border-style: solid;
+  object-fit:cover;
+  border-radius:70%;
+  
+}
+}
+
+
